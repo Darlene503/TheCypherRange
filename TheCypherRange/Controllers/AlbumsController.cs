@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace TheCypherRange.Controllers
 {
-    public class AlbumController : Controller
+    public class AlbumsController : Controller
     {
         private readonly IAlbumRepository repo;
 
-        public AlbumController(IAlbumRepository repo)
+        public AlbumsController(IAlbumRepository repo)
         {
             this.repo = repo;
         }
