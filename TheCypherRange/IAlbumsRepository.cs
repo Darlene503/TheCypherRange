@@ -6,8 +6,12 @@ using TheCypherRange.Models;
 
 namespace TheCypherRange
 {
-    public interface IAlbumRepository
+    public interface IAlbumsRepository
     {
         public IEnumerable<Albums> GetAllAlbums();
+        public Albums GetAlbum(int id);
+        public void UpdateAlbum(Albums album);
+
+
     }
 }

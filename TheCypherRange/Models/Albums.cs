@@ -12,6 +12,8 @@ namespace TheCypherRange.Models
         public int ReleaseYear { get; set; }    
         public string Artist { get; set;}   
 
+        public double Price { get; set; }
+
         
 
 

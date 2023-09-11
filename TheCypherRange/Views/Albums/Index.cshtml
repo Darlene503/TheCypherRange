@@ -4,19 +4,21 @@
 <table class="table">
     <tr>
         <th>ID</th>
-        <th>Title</th>
-        <th>RealeaseDate</th>
-        <th>ArtistName</th>
+        <th>AlbumName</th>
+        <th>RealeaseYear</th>
+        <th>Artist</th>
+        <th>Price</th>
         
     </tr>
 
-    @foreach (var album in @Model)
+    @foreach (var albums in @Model)
     {
         <tr>
-            <td>@album.AlbumID</td>
-            <td>@album.AlbumName</td>
-            <td>@album.ReleaseYear</td>         
-            <td>@album.Artist</td>
+            <td><a href=/Albums/ViewAlbum/@albums.AlbumID>@albums.AlbumID</a></td>
+            <td>@albums.AlbumName</td>
+            <td>@albums.ReleaseYear</td>         
+            <td>@albums.Artist</td>
+            <td>@albums.Price</td>
                       
         </tr>
     }

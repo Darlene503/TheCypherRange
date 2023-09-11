@@ -1,0 +1,25 @@
+﻿@model Albums
+
+<h3>@Model.AlbumName Information</h3>
+
+<table class="table">
+    <tr>
+        <th>AlbumID</th>
+        <th>AlbumName</th>
+        <th>ReleaseYear</th>
+        <th>Artist</th>
+        <th>Price</th>
+               
+    </tr>
+    <tr>
+        <td>@Model.AlbumID</td>
+        <td>@Model.AlbumName</td>
+        <td>@Model.ReleaseYear</td>   
+        <td>@Model.Artist</td>
+        <td>@Model.Price</td>
+    </tr>
+</table>
+
+<div style="display: block">
+    <a href="/Albums/UpdateAlbum/@Model.AlbumID">Update this Album</a>
+</div>

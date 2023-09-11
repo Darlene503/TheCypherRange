@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using TheCypherRange.Models;
 
 namespace TheCypherRange.Controllers
 {
     public class AlbumsController : Controller
     {
-        private readonly IAlbumRepository repo;
+        private readonly IAlbumsRepository repo;
 
-        public AlbumsController(IAlbumRepository repo)
+        public AlbumsController(IAlbumsRepository repo)
         {
             this.repo = repo;
         }
@@ -21,6 +18,31 @@ namespace TheCypherRange.Controllers
             var albums = repo.GetAllAlbums();
 
             return View(albums);
+        }
+
+        public IActionResult ViewAlbum(int id)
+        {
+            var album = repo.GetAlbum(id);
+
+            return View(album);
+        }
+
+        public IActionResult UpdateAlbum(int id)
+        {
+            Albums album = repo.GetAlbum(id);
+
+            if (album == null)
+            {
+                return View("AlbumtNotFound");
+            }
+            return View(album);
+        }
+
+        public IActionResult UpdateAlbumToDatabase(Albums album)
+        {
+            repo.UpdateAlbum(album);
+
+            return RedirectToAction("ViewAlbum", new { id = album.AlbumID });
         }
     }
 }
