@@ -44,5 +44,23 @@ namespace TheCypherRange.Controllers
 
             return RedirectToAction("ViewAlbum", new { id = album.AlbumID });
         }
+
+        public IActionResult InsertAlbum()
+        {       
+         return View();
+        }
+
+        public IActionResult InsertAlbumToDatabase(Albums albumToInsert)
+        {
+            repo.InsertAlbum(albumToInsert);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult DeleteAlbum(Albums album)
+        {
+            repo.DeleteAlbum(album);
+            return RedirectToAction("Index");
+        }
+
     }
 }

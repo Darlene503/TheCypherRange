@@ -1,0 +1,24 @@
+﻿@model Albums
+
+<h2>Create a New Album</h2>
+
+@using (Html.BeginForm("InsertAlbumToDatabase", "Albums", "Post"))
+
+
+{
+    <input asp-for="AlbumID" type="hidden" value="" />
+
+    <label asp-for="AlbumName" class="control-label">AlbumName</label>
+    <input type="text" name="AlbumName" class="form-control" value="" />
+
+    <label asp-for="ReleaseYear" class="control-label">ReleaseYear</label>
+    <input type="text" name="ReleaseYear" class="form-control" value="" />
+
+    <label asp-for="Artist" class="control-label">Artist</label>
+    <input type="text" name="artist" class="form-control" value=""/>
+
+    <label asp-for="Price" class="control-label">Price</label>
+    <input type-for="Price" step="0.01" name="Price" class="form-control" />
+
+     <input type="submit" value="Create Album" class="btn btn-primary" />
+}

@@ -23,3 +23,12 @@
 <div style="display: block">
     <a href="/Albums/UpdateAlbum/@Model.AlbumID">Update this Album</a>
 </div>
+
+<div style="display: block">
+
+    @using (Html.BeginForm("DeleteAlbum", "Album", "Post"))
+    {
+        <input type="hidden" asp-for="AlbumID" value="@Model.AlbumID" />
+        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this Album" />
+    }
+</div>
