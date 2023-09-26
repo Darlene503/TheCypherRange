@@ -26,31 +26,27 @@ h1 {
     font-family: 'Decipher PERSONAL USE';
     font-size: 145px;
     text-shadow: 5px 2px 1px white;
-    color: deepskyblue;
-   
-   
+    color: deepskyblue;   
 }
 
 
 body {
     background: url("https://i.gifer.com/7Hzf.gif") no-repeat center center fixed;
-    background-size: cover;
-    
+    background-size: cover;   
 }
 
 h2 {
     font-family: PaintCans;
-    font-size: 30px;
+    font-size: 25px;
     text-shadow: 3px 3px 3px deepskyblue;
     color: white;
-
 }
 
 h3 {
     color: black;
     font-family: PaintCans;
     font-size: 30px;
-    text-shadow: 3px 7px  7px black;
+    text-shadow: 3px 7px 7px black;
     color: deepskyblue;
     text-shadow: 3px 3px 3px white;
 }
@@ -74,7 +70,7 @@ a:hover {
 .container{
     color:deepskyblue;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     text-shadow: 1px 1px 1px white;    
 }
 
@@ -82,15 +78,15 @@ a:hover {
 
 .container-fluid {
     font-family: PaintCans;
-    font-size: 30px;
+    font-size: 20px;
     text-shadow: 3px 2px 1px deepskyblue;
     padding: 3px 3px;
     background-color: transparent;
+    
 }
 
 .container-fluid a {
-    border: none;
-   
+    border: none;  
 }
 
  .navbar-brand{
@@ -118,8 +114,7 @@ footer > .container > a {
     color: deepskyblue;
     background: none;
     border: none;
-    font-size: 20px;
-    
+    font-size: 20px; 
 }
 
 form input {
@@ -131,23 +126,14 @@ form input {
     padding: 1px 5px;
 }
 
-header {
-    display: flex;  
-}
-
-nav-link.dark-text{
-    width: 150px;
-    background-color: tra;
-    padding: 7px;
-   
-}
 
 .btn-primary {
-    background-color: rgba(255, 255, 255, 0.0);
     font-family: PaintCans;
     text-shadow: 3px 3px 5px deepskyblue;
     font-size: 25px;
     border-width: 0px;
+    background-color: transparent;
+  
 }
 
    
@@ -159,9 +145,7 @@ nav-link.dark-text{
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 10px;
-    background-color: rgba(0 0 0 0);
 }
-
 
 
 .navbar-expand-sm .navbar-nav .nav-link {
@@ -170,12 +154,18 @@ nav-link.dark-text{
     background-color: transparent;
 }
 
-
-
-
-element.style{
+element.style {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 100%;
+    max-width: 1000%;
+}
 
+
+.form-control {
+    background-color: lightgray
 }
 
  

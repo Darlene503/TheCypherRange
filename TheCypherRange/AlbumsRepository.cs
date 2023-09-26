@@ -35,7 +35,7 @@ namespace TheCypherRange
         public void InsertAlbum(Albums albumToInsert)
         {
             _conn.Execute("INSERT INTO albums (ALBUMNAME, RELEASEYEAR, ARTIST, PRICE) VALUES (@name, @releaseyear, @artist, @price);",
-       new { name = albumToInsert.AlbumName, releaseyear = albumToInsert.ReleaseYear, Artist = albumToInsert.Artist, Price = albumToInsert.Price });
+            new { name = albumToInsert.AlbumName, releaseyear = albumToInsert.ReleaseYear, Artist = albumToInsert.Artist, Price = albumToInsert.Price });
         }
 
         public void DeleteAlbum(Albums Albums)

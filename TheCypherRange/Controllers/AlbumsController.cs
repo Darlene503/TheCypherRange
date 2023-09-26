@@ -46,8 +46,8 @@ namespace TheCypherRange.Controllers
         }
 
         public IActionResult InsertAlbum()
-        {       
-         return View();
+        {    
+            return View();
         }
 
         public IActionResult InsertAlbumToDatabase(Albums albumToInsert)

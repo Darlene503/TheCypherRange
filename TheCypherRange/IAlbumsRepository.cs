@@ -10,7 +10,9 @@ namespace TheCypherRange
     public interface IAlbumsRepository
     {
         public IEnumerable<Albums> GetAllAlbums();
+
         public Albums GetAlbum(int id);
+
         public void UpdateAlbum(Albums album);
 
         public void InsertAlbum(Albums albumToInsert);
