@@ -28,8 +28,8 @@ namespace TheCypherRange
 
         public void UpdateAlbum(Albums Albums)
         {
-            _conn.Execute("UPDATE Albums SET AlbumName = @albumname, Price = @price WHERE AlbumID = @id",
-             new {Albumname = Albums.AlbumName, RealeaseYear = Albums.ReleaseYear, Artist = Albums.Artist, price = Albums.Price, id = Albums.AlbumID });
+            _conn.Execute("UPDATE Albums SET AlbumName = @albumname, RELEASEYEAR = @releaseyear, Price = @price WHERE AlbumID = @id",
+             new {Albumname = Albums.AlbumName, releaseyear = Albums.ReleaseYear, Artist = Albums.Artist, price = Albums.Price, id = Albums.AlbumID });
         }
 
         public void InsertAlbum(Albums albumToInsert)
@@ -40,10 +40,8 @@ namespace TheCypherRange
 
         public void DeleteAlbum(Albums Albums)
         {
-            _conn.Execute("DELETE FROM AlbumName WHERE AlbumID = @id;", new { id = Albums.AlbumID });
-            _conn.Execute("DELETE FROM ReleaseYear WHERE AlbumID = @id;", new { id = Albums.AlbumID });
-            _conn.Execute("DELETE FROM Artist WHERE AlbumID = @id;", new { id = Albums.AlbumID });
-            _conn.Execute("DELETE FROM PRICE WHERE AlbumID = @id;", new { id = Albums.AlbumID });
+            _conn.Execute("DELETE FROM Albums WHERE AlbumID = @id;", new { id = Albums.AlbumID });
+            
         }
     }
 

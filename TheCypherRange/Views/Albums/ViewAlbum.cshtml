@@ -26,7 +26,7 @@
 
 <div style="display: block">
 
-    @using (Html.BeginForm("DeleteAlbum", "Album", "Post"))
+    @using (Html.BeginForm("DeleteAlbum", "Albums", "Post"))
     {
         <input type="hidden" asp-for="AlbumID" value="@Model.AlbumID" />
         <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this Album" />

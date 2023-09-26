@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+ 
 }
 
 @media (min-width: 768px) {
@@ -18,5 +19,165 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+  }
+
+h1 {
+    font-family: 'Decipher PERSONAL USE';
+    font-size: 145px;
+    text-shadow: 5px 2px 1px white;
+    color: deepskyblue;
+   
+   
 }
+
+
+body {
+    background: url("https://i.gifer.com/7Hzf.gif") no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+h2 {
+    font-family: PaintCans;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px deepskyblue;
+    color: white;
+
+}
+
+h3 {
+    color: black;
+    font-family: PaintCans;
+    font-size: 30px;
+    text-shadow: 3px 7px  7px black;
+    color: deepskyblue;
+    text-shadow: 3px 3px 3px white;
+}
+
+a {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px deepskyblue solid;
+    border-radius: 4px;
+    padding: 2px 2px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.5;
+}
+
+a:hover {
+    border: solid 1px black;
+    color: deepskyblue;
+}
+
+.container{
+    color:deepskyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px white;    
+}
+
+
+
+.container-fluid {
+    font-family: PaintCans;
+    font-size: 30px;
+    text-shadow: 3px 2px 1px deepskyblue;
+    padding: 3px 3px;
+    background-color: transparent;
+}
+
+.container-fluid a {
+    border: none;
+   
+}
+
+ .navbar-brand{
+    color: deepskyblue;
+    font-size: 50px;
+}
+
+ table{
+     background-color: rgba(255, 255, 255, 0.5);
+     font-weight: bold;
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+}
+
+ table a {
+     background: none;
+     text-decoration: none;
+     color: black;
+     cursor: pointer;
+     border: none;
+ }
+
+footer > .container > a {
+    color: deepskyblue;
+    background: none;
+    border: none;
+    font-size: 20px;
+    
+}
+
+form input {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px deepskyblue solid;
+    border-radius: 4px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px 5px;
+}
+
+header {
+    display: flex;  
+}
+
+nav-link.dark-text{
+    width: 150px;
+    background-color: tra;
+    padding: 7px;
+   
+}
+
+.btn-primary {
+    background-color: rgba(255, 255, 255, 0.0);
+    font-family: PaintCans;
+    text-shadow: 3px 3px 5px deepskyblue;
+    font-size: 25px;
+    border-width: 0px;
+}
+
+   
+.btn:hover{
+    background-color: black;
+}
+
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    background-color: rgba(0 0 0 0);
+}
+
+
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    background-color: transparent;
+}
+
+
+
+
+element.style{
+    position: absolute;
+
+}
+
+ 
+
+
