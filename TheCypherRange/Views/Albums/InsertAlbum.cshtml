@@ -1,8 +1,8 @@
 ﻿@model Albums
 
-<h2>Insert New Album</h2>
+<h2>Insert New Album To Database</h2>
 
-@using (Html.BeginForm("Insert Album", "Albums", "Post"))
+@using (Html.BeginForm("InsertAlbumToDatabse", "Albums", "Post")) 
 
 
 {
@@ -20,5 +20,5 @@
     <label asp-for="Price" class="control-label">Price</label>
     <input type-for="Price" step="0.01" name="Price" class="form-control" />
 
-     <input type="submit" value="Create Album" class="btn btn-primary" />
+     <input type="submit" value="Create" class="btn btn-primary" />
 }
