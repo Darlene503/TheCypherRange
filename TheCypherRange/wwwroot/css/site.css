@@ -25,10 +25,11 @@ body {
 h1 {
     font-family: 'Decipher PERSONAL USE';
     font-size: 150px;
-    text-shadow: 5px 2px 1px white;
+    text-shadow: 5px 2px 3px white;
     color: deepskyblue;   
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-left: 5rem;
+   
 }
 
 
@@ -43,7 +44,7 @@ h2 {
     font-size: 25px;
     text-shadow: 4px 4px 1px black;
     color: white;
-    margin-top: 5rem;    
+    margin-top: 2rem;    
     margin-left: 10rem;
 }
     
@@ -322,5 +323,12 @@ h7{
 
 a.ID{
     margin-left: 0rem;
-
 }
+
+h8 {
+    font-family: 'Decipher PERSONAL USE';
+    font-size: 160px;
+    text-align: center;
+    text-shadow: 5px 5px 3px white;
+}
+   
