@@ -230,11 +230,12 @@ h5{
     margin-left: 7rem;
 }
 
+/*Privacy Policy*/
 h6{
-   font-size: 80px;
+   font-size: 100px;
    font-family: 'Decipher PERSONAL USE';
    text-shadow: 4px 1px 1px white;
-   margin-top: 5rem;
+   margin-top:3rem;
    margin-left: 8rem;
 }
 
