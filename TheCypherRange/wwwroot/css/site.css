@@ -23,13 +23,12 @@ body {
   }
 
 h1 {
-    font-family: 'Decipher PERSONAL USE';
-    font-size: 150px;
+    font-family: Decipher;
+    font-size: 160px;
     text-shadow: 5px 2px 3px white;
     color: deepskyblue;   
     margin-top: 3rem;
-    margin-left: 5rem;
-   
+    margin-left: 5rem;  
 }
 
 
@@ -326,9 +325,11 @@ a.ID{
 }
 
 h8 {
-    font-family: 'Decipher PERSONAL USE';
+    font-family: 'Decipher';
     font-size: 160px;
     text-align: center;
     text-shadow: 5px 5px 3px white;
 }
-   
+   h9{
+       font-family: 'Decipher Symbols'
+   }
