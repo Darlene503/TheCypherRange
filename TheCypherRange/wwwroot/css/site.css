@@ -1,6 +1,26 @@
+@font-face {
+    font-family: "My Font";
+    src: url('./Decipher-Bold.otf') format("opentype");
+    src: url('./Decipher-Regular.otf') format("opentype");
+   
+}
+
+@font-face {
+    font-family: "Symbols";
+    src: url('./DecipherSymbols-Bold.otf') format("opentype");
+    src: url('./DecipherSymbols-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "PaintCans";
+    src: url('./PaintCans.otf') format("opentype");
+  
+}
+
+
+
 html {
-  font-size: 14px;
- 
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
@@ -20,10 +40,11 @@ html {
 
 body {
     margin-bottom: 60px;
-  }
+  
+}
 
 h1 {
-    font-family: Decipher;
+    font-family: 'My Font';
     font-size: 160px;
     text-shadow: 5px 2px 3px white;
     color: deepskyblue;   
@@ -233,9 +254,9 @@ h5{
 /*Privacy Policy*/
 h6{
    font-size: 100px;
-   font-family: 'Decipher PERSONAL USE';
+   font-family: 'My Font';
    text-shadow: 4px 1px 1px white;
-   margin-top:2rem;
+   margin-top:1rem;
    margin-left: 8rem;
 }
 
@@ -325,11 +346,9 @@ a.ID{
 }
 
 h8 {
-    font-family: 'Decipher';
+    font-family: 'My Font';
     font-size: 160px;
     text-align: center;
     text-shadow: 5px 5px 3px white;
 }
-   h9{
-       font-family: 'Decipher Symbols'
-   }
+
