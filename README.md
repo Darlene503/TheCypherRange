@@ -19,7 +19,7 @@ The Cypher Range is a 1990s underground hiphop vinyl database that will let coll
 and artist. This site will also let people update information, as well as add, and delete information. This is done by using CRUD.
 
 
-Set/Installation Requirments
+Set Up/Installation Requirments
 
 please visit https://github.com/Darlene503/TheCypherRange
 
